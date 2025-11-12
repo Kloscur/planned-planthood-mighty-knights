@@ -1,0 +1,188 @@
+@import url('../base.css');
+
+
+/* ----- THE HEADER ----- */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.8em 0 3em;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1586281010691-f9da4be5b1f7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+header img {
+  height: 186px;
+  padding-bottom: .5em;
+}
+
+header h1 {
+  font-family: 'Maven Pro', sans-serif;
+  color: white;
+  font-size: 2.1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ----- THE MAIN SECTIONS ----- */
+section {
+  
+  margin: 2em;
+}
+
+section form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+section form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+section form label {
+}
+
+section form input {
+  border: none;
+  border-radius: .5em;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1em;
+}
+
+section form button {
+  grid-column: 1 / 3;
+  justify-self: center;
+  width: fit-content;
+  background-color: #0A846E;
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  border: none;
+  padding: .8em 1.5em;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+section form button:hover {
+  background-color: #2a5d2a; 
+}
+
+/* ----- THE SECTION HEADINGS ----- */
+section h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+section h3 {
+  font-family: Lato, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+/* ----- THE CARDS ----- */
+section:not(:first-of-type) {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(850px, 1fr));
+  gap: 7em;
+  justify-content: center; */
+}
+
+article {
+  background-image: url("https://images.unsplash.com/photo-1518568403628-df55701ade9e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: auto 300px;
+  background-repeat: no-repeat;
+  background-position: -70px 0px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  max-width: 300px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article img {
+  margin-top: 32px;
+  width: 150px;
+}
+
+article h3 {
+  font-size: 2rem;
+}
+
+article p {
+  font-size: 1rem;
+}
+}
+
+article button {
+  /* margin: 1.6em;
+  padding: 2em 4em; */
+  border: none;
+  border-radius: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+article button:first-of-type {
+  background-color: #2a5d2a;
+  color: #fff;
+}
+
+article button:last-of-type {
+  background-color: #b33b3b;
+  color: #fff;
+}
+
+/* ----- THE FOOTER ----- */
+footer {
+  background-color: #9E6D52;
+  padding: 1em 1em;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+footer img {
+  width: 220px;
+  height: 277px;
+  object-fit: cover;
+}
+nav > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav > p > a {
+  font-size: 1.2em;
+  color: #030303;
+  text-decoration: none;
+  margin: 1.5em;
+}
+
+nav > p > a:hover {
+  color: #0A846E;
+  text-decoration: underline;
+}
+
+
+/* ----- MOBILE MODE ----- */
+@media (max-width: 600px) and (min-width: 390px) {
+ 
+}
+
+/* ----- DESKTOP MODE ----- */
+@media (min-width: 990px) {
+  
+}
