@@ -62,7 +62,7 @@
     background: transparent;
   }
   
-  /* "M" badge overlapping center */
+ 
   .header::after {
     
     position: absolute;
@@ -82,7 +82,7 @@
     z-index: 3;
   }
   
-  /* ====== Heart (Logo-1.svg) ====== */
+ 
   .header img:nth-of-type(1) {
     position: absolute;
     left: 10%;
@@ -232,7 +232,7 @@
       margin-left: 320px;
       margin-top: -40px;
     }
-    /* Optional: mobile – stack vertically */
+    
     .season button:hover {
       background-color: #316a5d;
       transform: translateY(-2px);
@@ -291,7 +291,6 @@
       display: flex;              
     } */
   
-    /* Overlay to darken image for readability */
   
   
     
@@ -307,7 +306,7 @@
     }
     
     /* Caption */
-    .plants .card > figurecaption {
+    .plants .card > figcaption {
       background: #fff;
   
       padding:14px 16px 16px;
@@ -412,7 +411,6 @@
   }
   
   
-  /* Make text sit above overlay */
   .card figcaption {
     position: relative;
     z-index: 1;
@@ -426,13 +424,15 @@
       justify-self: center ;
       background: #2e7a6b; 
       color: #fff; border: 0;
-      padding: 10px 18px; 
-      border-radius: 8px; cursor: pointer;
+      padding: 20px 45px; 
+      margin-top: 30px;
+      border-radius: 8px; 
+      cursor: pointer;
       box-shadow: 0 4px 10px rgba(0,0,0,.12);
     }
     .plants > .more:hover { background: #246554; }
     
-    /* Responsive (optional) */
+    /* Responsive  */
     @media (max-width: 980px) {
       .plants { width: 100% !important; margin-left: 0 ; }
      
@@ -483,7 +483,7 @@
       font-size: 28px;
       color: #222;
       margin-top: -400px;
-      margin-left: 50px;
+      margin-left: -20px;
      
     }
     
@@ -493,9 +493,10 @@
       max-width: 420px;
       line-height: 1.3;
       color: #333;
-      margin-top: -160px;
-      text-justify: right;
-      margin-left: 50px;
+      margin-top: -250px;
+      text-justify: left;
+      margin-left: -20px;
+      text-align: left;
      
    
     }
@@ -513,10 +514,10 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.15);
       cursor: pointer;
       transition: all 0.3s ease;
-      margin-left: 320px;
-      margin-top: -40px;
+      margin-left: -25px;
+      margin-top: -70px;
     }
-    /* Optional: mobile – stack vertically */
+   
     .last-planted button:hover {
       background-color: #316a5d;
       transform: translateY(-2px);
@@ -577,14 +578,30 @@
   }
   
   /* Phone and email */
-  footer .phone {
+  footer .phone p {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     position: absolute;
     left: 10px;
     bottom: 5px;
     font-size: 18px;
     z-index: 1;
+    margin: 35px;
+    
+  }
+
+  footer .phone p img {
+    width: 20px;                
+    height: auto;               
+    display: block; 
+              
   }
   footer .mail {
+    display: flex;
+    margin: 0 300px;
+    flex-direction: column ;
+    justify-content: flex-end;
     position: absolute;
     left: 10%;
     bottom: 25px;
@@ -592,22 +609,28 @@
     font-size: 18px;
     z-index: 1;
   }
+
+
+
   
-  /* "Till toppen av sidan" link */
-  footer a {
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #000;
+
+  .link {
+    background: #ffffff;       
+    padding: 2rem 0;         
+    text-align: center;      
+    border-top: 1px solid #e0e0e0; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .link a {
     text-decoration: none;
-    font-size: 20px;
-    padding-top: 10px;
-    border-top: 3px solid rgba(0, 119, 255, 0.25);
+    color: #000000;
+    font-size: 1.2 rem;
   }
-  footer a:hover {
-    text-decoration: underline;
-  }
+  
+
+ 
   
   /* Responsive tweaks */
   @media (max-width: 700px) {
