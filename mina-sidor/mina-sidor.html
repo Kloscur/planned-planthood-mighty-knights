@@ -15,9 +15,15 @@
                     <li><a href="#">PLANER</a></li>
                     <li><a href="#">HISTORIK</a></li>
                     <li><a href="#">TIPS</a></li>
-                    <li><a href="#">LOGGA UT</a></li>
+                    <li><a href="../index.html">LOGGA UT</a></li>
                 </ul>
             </nav>
+
+            <span class="nav burger-menu">
+                <a href="/index.html">
+                    <img src="../assets/burgir.svg" alt="Menu">
+                </a>
+            </span>
 
             <header>
                 <img src="../assets/logo.svg" alt="Logo">
@@ -26,8 +32,8 @@
         
 
             <!-- The Main Body -->
+            <h2>Lägg till ny plantering:</h2>
             <section>
-                <h2>Lägg till ny plantering:</h2>
                 <form>
                     <fieldset>
                         <label for="planta1">Planta:</label>
@@ -54,36 +60,48 @@
             </section>
 
             <!-- The Cards -->
-            <section>
-                <h3>Dina planerade planteringar:</h3>
-                <article>
-                    <img src="../assets/plant.svg" alt="Gurk-planta">
-                    <h3>Gurka</h3>
-                    <p>15 april 2024</p>
-                    <p>Rico Coolio</p>
-                    <button>ÄNDRA</button>
-                    <button>TA BORT</button>
+            <h3>Dina planerade planteringar:</h3>
+
+            <section class="section-cards">
+                <article class="card">
+                    <img class="card-image-logo" src="../assets/plant.svg" alt="Gurk-planta">
+                    <span class="card-bottom-left">
+                        <p class="card-title">Gurka</p>
+                        <p class="card-name">Rico Coolio</p>
+                    </span>
+                    <span class="card-bottom-right">
+                        <p class="card-date">15 april 2024</p>
+                        <button class="card-button change">ÄNDRA</button>
+                        <button class="card-button remove">TA BORT</button>
+                    </span>
                 </article>
             </section>
 
-            <section>
-                <h2>Dina planterade planteringar:</h2>
-                <article>
-                    <img src="../assets/plant.svg" alt="Gurk-planta">
-                    <h3>Gurka</h3>
-                    <p>15 april 2024</p>
-                    <p>Rico Coolio</p>
-                    <button>TA BORT</button>
+            <h3>Dina planterade planteringar:</h3>
+            
+            <section class="section-cards">
+                <article class="card">
+                    <img class="card-image-logo" src="../assets/plant.svg" alt="Gurk-planta">
+                    <span class="card-bottom-left">
+                        <p class="card-title">Gurka</p>
+                        <p class="card-name">Rico Coolio</p>
+                    </span>
+                    <span class="card-bottom-right">
+                        <p class="card-date">15 april 2024</p>
+                        <button class="card-button remove">TA BORT</button>
+                    </span>
                 </article>
-            </section>
-
-            <section>
-                <article>
-                    <img src="../assets/plant.svg" alt="Gurk-planta">
-                    <h3>Gurka</h3>
-                    <p>15 april 2024</p>
-                    <p>Rico Coolio</p>
-                    <button>TA BORT</button>
+            
+                <article class="card">
+                    <img class="card-image-logo" src="../assets/plant.svg" alt="Gurk-planta">
+                    <span class="card-bottom-left">
+                        <p class="card-title">Gurka</p>
+                        <p class="card-name">Rico Coolio</p>
+                    </span>
+                    <span class="card-bottom-right">
+                        <p class="card-date">15 april 2024</p>
+                        <button class="card-button remove">TA BORT</button>
+                    </span>
                 </article>
             </section>
 

@@ -27,8 +27,9 @@ header h1 {
 }
 
 /* ----- THE MAIN SECTIONS ----- */
+h2,
+h3,
 section {
-  
   margin: 2em;
 }
 
@@ -74,13 +75,13 @@ section form button:hover {
 }
 
 /* ----- THE SECTION HEADINGS ----- */
-section h2 {
+h2 {
   font-size: 2rem;
   font-weight: 400;
   text-align: left;
 }
 
-section h3 {
+h3 {
   font-family: Lato, sans-serif;
   font-size: 2rem;
   font-weight: 600;
@@ -96,52 +97,122 @@ section h3 {
   justify-content: center;
 } */
 
-article {
-  background-image: url("https://images.unsplash.com/photo-1518568403628-df55701ade9e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: auto 300px;
-  background-repeat: no-repeat;
-  background-position: -70px 0px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
-  max-width: 300px;
-  margin: 0;
+.section-cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 1.5em;
 }
 
-article img {
-  margin-top: 32px;
-  width: 150px;
-}
+  .card {
+    background-image: url("https://images.unsplash.com/photo-1518568403628-df55701ade9e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: auto 300px;
+    background-repeat: no-repeat;
+    background-position: -70px 0px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    max-width: 300px;
+    margin: 0;
 
-article h3 {
-  font-size: 2rem;
-}
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 300px auto;
+    grid-template-areas: 
+      "card-top card-top"
+      "card-left card-right";
+  }
 
-article p {
-  font-size: 1rem;
-}
+  .card-image-logo {
+    grid-area: card-top;
+    grid-column: 1 / 3;
+    margin-top: 45px;
+    width: 150px;
+    justify-self: center;
+  }
+
+  .card-bottom-left {
+    grid-area: card-left;
+    grid-column: 1/1;
+    padding-left: 1em;
+    font-family: Lato, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .card-bottom-right {
+    grid-area: card-right;
+    grid-column: 2/3;
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .card-title {
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin: .6em 0;
+  }
+
+  .card-date {
+    font-size: .8em;
+    font-weight: 700;
+  }
+
+  .card-name {
+    /* margin: 0px; */
+    font-weight: 300;
+    font-size: 0.8em;
+  }
+
+  .card-button {
+    width: 100px;
+    padding: 0.3em 0;
+    border: none;
+    border-radius: 9px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: .8em;
+    color: #fff;
+    margin-bottom: .8em;
+  }
+
+  .card-button.change {
+    background-color: #0A846E;
+  }
+
+  .card-button.remove {
+    background-color: #B93857;
+  }
+
+  /* article h3 {
+    font-size: 2rem;
+  }
+
+  article p {
+    font-size: 1rem;
+  }
 
 
-article button {
-  /* margin: 1.6em;
-  padding: 2em 4em; */
-  border: none;
-  border-radius: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 1.4rem;
-}
+  article button {
+    margin: 1.6em;
+    padding: 2em 4em;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.4rem;
+  }
 
-article button:first-of-type {
-  background-color: #0A846E;
-  color: #fff;
-}
+  article button:first-of-type {
+    background-color: #0A846E;
+    color: #fff;
+  }
 
-article button:last-of-type {
-  background-color: #b33b3b;
-  color: #fff;
-}
+  article button:last-of-type {
+    background-color: #b33b3b;
+    color: #fff;
+  } */
 
 /* ----- THE FOOTER ----- */
 footer {

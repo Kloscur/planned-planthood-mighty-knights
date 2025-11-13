@@ -1,3 +1,5 @@
+@import url('../base.css');
+
 * { 
     box-sizing: border-box; 
   }
@@ -147,7 +149,7 @@
     
     h1 {
       text-align: center;
-      color: #2f766a;
+      color: #0A846E;
       letter-spacing: 1px;          /* Slightly spaced out letters */
       margin: 40px 0 30px;
       
@@ -175,7 +177,7 @@
     
     /* Circle background behind the SVG icon */
     .season img {
-      background-color: #3d7f6e;   /* Green circle */
+      background-color: #0A846E;   /* Green circle */
       border-radius: 50%;
       padding: 60px;
       width: 270px;
@@ -219,7 +221,7 @@
     /* Button styling */
     .season button {
       justify-self: start;
-      background-color: #3d7f6e;
+      background-color: #0A846E;
       color: white;
       border: none;
       padding: 15px 38px;
@@ -422,7 +424,7 @@
     .plants > .last-button {
       grid-column: 1 / -1 ;
       justify-self: center ;
-      background: #2e7a6b; 
+      background: #0A846E; 
       color: #fff; border: 0;
       padding: 20px 45px; 
       margin-top: 30px;
@@ -459,7 +461,7 @@
     
     /* Circle background behind the SVG icon */
     .last-planted img {
-      background-color: #3d7f6e;   /* Green circle */
+      background-color: #0A846E;   /* Green circle */
       border-radius: 50%;
       padding: 60px;
       width: 300px;
