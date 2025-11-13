@@ -1,0 +1,618 @@
+* { 
+    box-sizing: border-box; 
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+  }
+  
+  body > div {
+      width: 932px;        
+      background-color: #fff;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+  
+  div{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  
+  /* ====== Layout shell ====== */
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  }
+  
+  /* ====== Header section ====== */
+  .header {
+    position: relative;
+    width: 100%;
+    max-width: 890px;     
+    height: 470px;         
+    margin: 0 auto;
+    overflow: hidden;
+  
+    /* 🔹 Left side background photo */
+    background:
+      
+      url("https://images.unsplash.com/photo-1615671524701-9c3dde8fdaa0?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") left / 50% 100% no-repeat,
+      linear-gradient(to bottom, #9b6b53 0 50%, #2f766a 50% 100%) right / 50% 100% no-repeat;
+      
+  }
+  
+  /* Divider line */
+  .header::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: transparent;
+  }
+  
+  /* "M" badge overlapping center */
+  .header::after {
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffd963;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    color: #3a3a3a;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+  }
+  
+  /* ====== Heart (Logo-1.svg) ====== */
+  .header img:nth-of-type(1) {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 220px;
+    height: auto;
+    pointer-events: none;
+    z-index: 2;
+  }
+  
+  /* ====== Seedling (top-right) ====== */
+  .header img:nth-of-type(2) {
+      position: absolute;
+      right: 13%;
+      top: 1%;
+      width: 160px;
+      height: auto;
+      opacity: 0.95;
+    }
+    
+    /* ====== Trowel (bottom-right) ====== */
+    .header img:nth-of-type(3) {
+      position: absolute;
+      right: 13%;
+      bottom: 1%;
+      width: 160px;
+      height: auto;
+      opacity: 0.95;
+    }
+  
+  
+  
+    /* ===== Navigation Bar Styling ===== */
+  nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;                   
+      background-color: #ffffff;     /* White background */
+      height: 60px;
+      border-bottom: 1px solid #e0e0e0;  /* Thin bottom line */
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    }
+    
+    /* Navigation links */
+    nav a {
+      text-decoration: none;
+      color: #1f6d57;                /* Dark green text */
+      font-weight: 600;
+      text-transform: uppercase;     /* Make all caps */
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+    }
+    
+    /* Hover effect */
+    nav a:hover {
+      color: #145041;
+      text-decoration: underline;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #2f766a;
+      letter-spacing: 1px;          /* Slightly spaced out letters */
+      margin: 40px 0 30px;
+      
+     
+    }
+  
+  
+  
+  
+    /* ===== Season Section ===== */
+  .season {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 60px;
+      align-items: center;
+      padding: 60px 40px;
+      max-width: 932px;
+      margin: 0 auto;
+    }
+  
+    /* Put ONLY the image in column 1; everything else goes to column 2 */
+  .season > img { grid-column: 1; }
+  .season > :not(img) { grid-column: 2; }
+  
+    
+    /* Circle background behind the SVG icon */
+    .season img {
+      background-color: #3d7f6e;   /* Green circle */
+      border-radius: 50%;
+      padding: 60px;
+      width: 270px;
+      height: 270px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      object-fit: contain;
+      justify-self: center;
+    }
+  
+    /* Stack all text elements together using flex in the second column */
+      .season h2,
+      .season p,
+      .season button {
+      grid-column: 2;
+      }
+  
+    
+    /* Heading and paragraph styling */
+    .season h2 {
+      margin: 0 0 12px 0;
+      font-size: 28px;
+      color: #222;
+      margin-top: -60px;
+      margin-left: 50px;
+     
+    }
+    
+    .season p {
+      font-size: 16px;
+      margin-bottom:25px;
+      max-width: 420px;
+      line-height: 1.3;
+      color: #333;
+      margin-top: -160px;
+      text-justify: right;
+      margin-left: 50px;
+     
+   
+    }
+    
+    /* Button styling */
+    .season button {
+      justify-self: start;
+      background-color: #3d7f6e;
+      color: white;
+      border: none;
+      padding: 15px 38px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-left: 320px;
+      margin-top: -40px;
+    }
+    /* Optional: mobile – stack vertically */
+    .season button:hover {
+      background-color: #316a5d;
+      transform: translateY(-2px);
+    }
+  
+    @media (max-width: 700px) {
+      .season { grid-template-columns: 1fr; row-gap: 24px; text-align: center; }
+      .season > img { margin: 0 auto; }
+      .season button { justify-self: center; }
+    }
+    
+    
+  
+   
+    
+    .plants {
+      box-sizing: border-box ;
+      width: var(--page-width) ;
+      margin-left: calc(50% - (var(--page-width) / 2));  /* center */
+     
+    
+      display: grid ;
+      grid-template-columns: repeat(3, minmax(0, 1fr));  /* 3 equal cols */
+      gap: 5px 6px;
+    }
+    
+    /* Heading spans the full row */
+    .plants > h3 {
+      text-align: center;
+      grid-column: 1 / -1 ;
+      margin: 6px 0 10px ;
+      font-size: 18px;
+      color: #2b4c45;
+    }
+    .card{
+      background:#fff;
+      border:1px solid #e9eeec;
+      border-radius:6px;
+      overflow:hidden;
+      box-shadow: 0 2px 0 rgba(0,0,0,.03), 0 10px 14px rgba(0,0,0,.08);
+      margin:10px;
+    }
+    /* Card shell */
+    /*.plants .card {
+      position: relative;
+      height: 240px;
+      align-items: flex-end;
+      color: #fff;
+      padding-left: 15px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 0 rgba(0,0,0,.03), 0 8px 18px rgba(0,0,0,.06);
+      display: flex;              
+    } */
+  
+    /* Overlay to darken image for readability */
+  
+  
+    
+    /* Photo */
+    .plants .card > img {
+      display: block;
+      width: 70%;
+      height: 270px;                
+      object-fit: cover;
+      margin: 1.5rem;
+      
+      
+    }
+    
+    /* Caption */
+    .plants .card > figurecaption {
+      background: #fff;
+  
+      padding:14px 16px 16px;
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+    
+    }
+  
+    /* Left group: stack title over subtitle */
+  .plants .card .column1 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  
+    
+    .plants .card .title { 
+      font-weight: 600; 
+      font-size: 16px; 
+      color:#1e1e1e;
+    }
+    .plants .card .date  {
+      
+      color: black; 
+      padding:6px 12px;
+     
+      font-size:12px;
+      font-weight:700;
+      
+      white-space:nowrap;
+    }
+    .plants .card .danger {
+       
+      
+      background:#b63b46;
+      color:#fff;
+      border:none;
+      padding:6px 12px;
+      border-radius:10px;
+      font-size:12px;
+      font-weight:700;
+      box-shadow:0 3px 0 rgba(0,0,0,.12);
+      cursor:pointer;
+      white-space: nowrap;
+      
+    }
+    
+    .card .danger:hover{ 
+      background:#972f38; 
+    }
+    .plants .card .sub { 
+      
+      font-size: 13px;
+      color: #7d8a86;
+      margin-top: 4px;
+    }
+  
+    .plants .card {
+      position: relative;
+    }
+    
+    .plants .card::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);   /* centre it */
+      width: 80%;
+      height: 80%;
+    
+      opacity: 0.9;
+      pointer-events: none;
+      z-index: 1;
+    }
+    
+  
+    /* Each card gets its own background image */
+  .card1 {
+    background-image: url("https://images.unsplash.com/photo-1518568403628-df55701ade9e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") ;
+  }
+  
+  .card2 {
+    background: url("https://images.unsplash.com/photo-1596199050105-6d5d32222916?q=80&w=2639&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat;
+  }
+  
+  .card3 {
+    background: url("https://images.unsplash.com/photo-1565698228480-eec300c9679b?q=80&w=2806&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat;
+  }
+  
+  .card4 {
+    background: url("https://images.unsplash.com/photo-1687878269804-63e8b50e3ddc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat;
+  }
+  
+  .card5 {
+    background: url("https://images.unsplash.com/photo-1555447740-03e40562af94?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3") center/cover no-repeat;
+  }
+  
+  .card6 {
+    background: url("https://images.unsplash.com/photo-1627989230968-d0b8e2d1a398?q=80&w=2962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat;
+  }
+  
+  
+  /* Make text sit above overlay */
+  .card figcaption {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+  }
+  
+    
+    /* “Visa fler” centered under the grid */
+    .plants > .last-button {
+      grid-column: 1 / -1 ;
+      justify-self: center ;
+      background: #2e7a6b; 
+      color: #fff; border: 0;
+      padding: 10px 18px; 
+      border-radius: 8px; cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,.12);
+    }
+    .plants > .more:hover { background: #246554; }
+    
+    /* Responsive (optional) */
+    @media (max-width: 980px) {
+      .plants { width: 100% !important; margin-left: 0 ; }
+     
+    @media (max-width: 620px) {
+      .plants { grid-template-columns: 1fr ; }
+    } }
+    
+  
+    
+    .last-planted {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 60px;
+      align-items: center;
+      padding: 60px 40px;
+      max-width: 932px;
+      margin: 0 auto;
+    }
+  
+    /* Put ONLY the image in column 2; everything else goes to column 1 */
+  .last-planted > img { grid-column: 2; }
+  .last-planted > :not(img) { grid-column: 1; }
+  
+    
+    /* Circle background behind the SVG icon */
+    .last-planted img {
+      background-color: #3d7f6e;   /* Green circle */
+      border-radius: 50%;
+      padding: 60px;
+      width: 300px;
+      height: 300px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      object-fit: contain;
+      justify-self: center;
+    }
+  
+    /* Stack all text elements together using flex in the second column */
+      .last-planted h3,
+      .last-planted p,
+      .last-planted button {
+      grid-column: 1;
+      }
+  
+    
+    /* Heading and paragraph styling */
+    .last-planted h3 {
+      margin: 0 0 12px 0;
+      font-size: 28px;
+      color: #222;
+      margin-top: -400px;
+      margin-left: 50px;
+     
+    }
+    
+    .last-planted p {
+      font-size: 16px;
+      margin-bottom:25px;
+      max-width: 420px;
+      line-height: 1.3;
+      color: #333;
+      margin-top: -160px;
+      text-justify: right;
+      margin-left: 50px;
+     
+   
+    }
+    
+    /* Button styling */
+    .last-planted button {
+      justify-self: start;
+      background-color: #3d7f6e;
+      color: white;
+      border: none;
+      padding: 15px 38px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-left: 320px;
+      margin-top: -40px;
+    }
+    /* Optional: mobile – stack vertically */
+    .last-planted button:hover {
+      background-color: #316a5d;
+      transform: translateY(-2px);
+    }
+  
+    @media (max-width: 700px) {
+      .last-planted { grid-template-columns: 1fr; row-gap: 24px; text-align: center; }
+      .last-planted > img { margin: 0 auto; }
+      .last-planted button { justify-self: center; }
+    }
+    
+  
+  
+  
+  footer {
+    position: relative;
+    height: 540px;
+    background-image: url('https://images.unsplash.com/photo-1586281010691-f9da4be5b1f7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left;
+    overflow: hidden;
+    margin-top: 25px;
+  }
+  
+  /* Dark overlay (left side) */
+  footer::before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Headline */
+  footer h2 {
+    position: absolute;
+    left: 70px;
+    top: 38%;
+    transform: translateY(-50%);
+    margin: 0;
+    font-size: 60px;
+    font-weight: 700;
+    z-index: 1;
+  }
+  
+  /* Heart logo */
+  footer img {
+    position: absolute;
+    right: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    z-index: 1;
+  }
+  
+  /* Phone and email */
+  footer .phone {
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    font-size: 18px;
+    z-index: 1;
+  }
+  footer .mail {
+    position: absolute;
+    left: 10%;
+    bottom: 25px;
+    transform: translateX(-50%);
+    font-size: 18px;
+    z-index: 1;
+  }
+  
+  /* "Till toppen av sidan" link */
+  footer a {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 10px;
+    border-top: 3px solid rgba(0, 119, 255, 0.25);
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 700px) {
+    footer h2 { font-size: 40px; left: 30px; }
+    footer img { width: 120px; right: 40px; }
+    footer .phone, div .mail { font-size: 14px; }
+  }
+  
