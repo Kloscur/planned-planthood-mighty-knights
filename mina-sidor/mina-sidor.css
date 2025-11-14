@@ -222,6 +222,10 @@ nav > p > a:hover {
         font-size: 1.5rem;
     }
 
+    .burger-menu{
+        display: block;
+    }
+
     /* Form */
     section form {
         grid-template-columns: 1fr;
