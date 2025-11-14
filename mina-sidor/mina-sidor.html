@@ -1,124 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="mina-sidor.css">
-        <title>Mina sidor</title>
-    </head>
-    <body>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mina-sidor.css">
+    <title>Mina sidor</title>
+</head>
+<body>
 
-        <div class="container">
-            <!-- The Header -->
-            <nav>
-                <ul>
-                    <li><a href="#">PLANER</a></li>
-                    <li><a href="#">HISTORIK</a></li>
-                    <li><a href="#">TIPS</a></li>
-                    <li><a href="../index.html">LOGGA UT</a></li>
-                </ul>
-            </nav>
+<div class="container">
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">PLANER</a></li>
+            <li><a href="#">HISTORIK</a></li>
+            <li><a href="#">TIPS</a></li>
+            <li><a href="/index.html">LOGGA UT</a></li>
+        </ul>
+    </nav>
 
-            <span class="nav burger-menu">
-                <a href="/index.html">
-                    <img src="../assets/burgir.svg" alt="Menu">
-                </a>
+    <a href="#" class="burger-menu">
+        <img src="../assets/burgir.svg" alt="Menu">
+    </a>
+
+    <!-- Header -->
+    <header>
+        <img src="../assets/logo.svg" alt="Logo">
+        <h1>Mina sidor</h1>
+    </header>
+
+    <!-- Add New Planting Form -->
+    <h2>Lägg till ny plantering:</h2>
+    <section>
+        <form>
+            <fieldset>
+                <label for="planta1">Planta:</label>
+                <input type="text" id="planta1" name="planta1">
+            </fieldset>
+
+            <fieldset>
+                <label for="datum1">Datum:</label>
+                <input type="date" id="datum1" name="datum1">
+            </fieldset>
+
+            <fieldset>
+                <label for="planta2">Planta:</label>
+                <input type="text" id="planta2" name="planta2">
+            </fieldset>
+
+            <fieldset>
+                <label for="datum2">Datum:</label>
+                <input type="date" id="datum2" name="datum2">
+            </fieldset>
+
+            <button type="submit">LÄGG TILL</button>
+        </form>
+    </section>
+
+    <!-- Planned Plantings -->
+    <h3>Dina planerade planteringar:</h3>
+    <section class="section-cards">
+        <article class="card">
+            <img class="card-image-logo" src="../assets/plant.svg" alt="Gurk-planta">
+            <span class="card-bottom-left">
+                <span class="card-title">Gurka</span>
+                <span class="card-name">Rico Coolio</span>
             </span>
+            <span class="card-bottom-right">
+                <span class="card-date">15 april 2024</span>
+                <button class="card-button change">ÄNDRA</button>
+                <button class="card-button remove">TA BORT</button>
+            </span>
+        </article>
+    </section>
 
-            <header>
-                <img src="../assets/logo.svg" alt="Logo">
-                <h1>Mina sidor</h1>
-            </header>
-        
+    <!-- Planted Plantings -->
+    <h3>Dina planterade planteringar:</h3>
+    <section class="section-cards">
+        <article class="card">
+            <img class="card-image-logo" src="../assets/plant.svg" alt="Gurk-planta">
+            <span class="card-bottom-left">
+                <span class="card-title">Gurka</span>
+                <span class="card-name">Rico Coolio</span>
+            </span>
+            <span class="card-bottom-right">
+                <span class="card-date">15 april 2024</span>
+                <button class="card-button remove">TA BORT</button>
+            </span>
+        </article>
 
-            <!-- The Main Body -->
-            <h2>Lägg till ny plantering:</h2>
-            <section>
-                <form>
-                    <fieldset>
-                        <label for="planta1">Planta:</label>
-                        <input type="text" id="planta1" name="planta1">
-                    </fieldset>
+        <article class="card">
+            <img class="card-image-logo" src="../assets/plant.svg" alt="Gurk-planta">
+            <span class="card-bottom-left">
+                <span class="card-title">Gurka</span>
+                <span class="card-name">Rico Coolio</span>
+            </span>
+            <span class="card-bottom-right">
+                <span class="card-date">15 april 2024</span>
+                <button class="card-button remove">TA BORT</button>
+            </span>
+        </article>
+    </section>
 
-                    <fieldset>
-                        <label for="datum1">Datum:</label>
-                        <input type="date" id="datum1" name="datum1">
-                    </fieldset>
+    <!-- Footer -->
+    <footer>
+        <img src="https://plus.unsplash.com/premium_photo-1678344170545-c3edef92a16e?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Paprika Mannen">
+        <img src="https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vattenkanna bild">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Grönsakerna">
+        <img src="https://plus.unsplash.com/premium_photo-1681398651047-78491e34f66a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Plockar grönsaker">
+    </footer>
 
-                    <fieldset>
-                        <label for="planta2">Planta:</label>
-                        <input type="text" id="planta2" name="planta2">
-                    </fieldset>
-                    
-                    <fieldset>
-                        <label for="datum2">Datum:</label>
-                        <input type="date" id="datum2" name="datum2">
-                    </fieldset>
+    <!-- Back to Top -->
+    <nav>
+        <p>
+            <a href="#">Till toppen av sidan</a>
+        </p>
+    </nav>
+</div>
 
-                    <button type="submit">LÄGG TILL</button>
-                </form>
-            </section>
-
-            <!-- The Cards -->
-            <h3>Dina planerade planteringar:</h3>
-
-            <section class="section-cards">
-                <article class="card">
-                    <img class="card-image-logo" src="../assets/plant.svg" alt="Gurk-planta">
-                    <span class="card-bottom-left">
-                        <p class="card-title">Gurka</p>
-                        <p class="card-name">Rico Coolio</p>
-                    </span>
-                    <span class="card-bottom-right">
-                        <p class="card-date">15 april 2024</p>
-                        <button class="card-button change">ÄNDRA</button>
-                        <button class="card-button remove">TA BORT</button>
-                    </span>
-                </article>
-            </section>
-
-            <h3>Dina planterade planteringar:</h3>
-            
-            <section class="section-cards">
-                <article class="card">
-                    <img class="card-image-logo" src="../assets/plant.svg" alt="Gurk-planta">
-                    <span class="card-bottom-left">
-                        <p class="card-title">Gurka</p>
-                        <p class="card-name">Rico Coolio</p>
-                    </span>
-                    <span class="card-bottom-right">
-                        <p class="card-date">15 april 2024</p>
-                        <button class="card-button remove">TA BORT</button>
-                    </span>
-                </article>
-            
-                <article class="card">
-                    <img class="card-image-logo" src="../assets/plant.svg" alt="Gurk-planta">
-                    <span class="card-bottom-left">
-                        <p class="card-title">Gurka</p>
-                        <p class="card-name">Rico Coolio</p>
-                    </span>
-                    <span class="card-bottom-right">
-                        <p class="card-date">15 april 2024</p>
-                        <button class="card-button remove">TA BORT</button>
-                    </span>
-                </article>
-            </section>
-
-            <!-- The Footer -->
-            <footer>
-                <img src="https://plus.unsplash.com/premium_photo-1678344170545-c3edef92a16e?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Paprika Mannen">
-                <img src="https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vattenkanna bild">
-                <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Grönsakerna">
-                <img src="https://plus.unsplash.com/premium_photo-1681398651047-78491e34f66a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Plockar grönsaker">
-            </footer>
-            
-            <nav>
-                <p>
-                    <a href="#">Till toppen av sidan</a>
-                </p>
-            </nav>
-        </div>
-
-    </body>
+<script src="mina-sidor.js"></script>
+</body>
 </html>

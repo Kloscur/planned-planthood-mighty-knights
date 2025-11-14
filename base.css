@@ -65,10 +65,6 @@ button {
 /* ----- MOBILE MODE ----- */
 @media (max-width: 600px) and (min-width: 390px) {
 
-nav {
-    display: none;
-}
-
 .nav.burger-menu {
   display: block;
 }
