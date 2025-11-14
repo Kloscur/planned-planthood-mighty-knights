@@ -457,7 +457,7 @@ footer img {
     z-index: 1;
 }
 
-footer .phone p {
+footer .phone span {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -466,10 +466,10 @@ footer .phone p {
     bottom: 5px;
     font-size: 18px;
     z-index: 1;
-    margin: 35px;
+    margin: 0 0 20px 50px;
 }
 
-footer .phone p img {
+footer .phone span img {
     width: 20px;
     height: auto;
     display: block;
